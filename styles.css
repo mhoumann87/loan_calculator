@@ -102,3 +102,51 @@ for x-large screens*/
   width: 100%;
   max-width: 112.5rem;
 }
+
+/* Top-bar only visible when fully implemented
+ with michael-h.dk */
+.top-bar {
+  display: none; /* remove */
+  grid-area: top-bar;
+  background-color: #2e2e2e;
+}
+
+.top-bar .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.top-bar h1 {
+  font-weight: var(--normal);
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.top-bar a > h1 {
+  color: var(--text);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav--links {
+  margin-left: 1rem;
+}
+
+.nav--links a {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 46.875rem) {
+  .top-bar .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
