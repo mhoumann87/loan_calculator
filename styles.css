@@ -150,3 +150,68 @@ nav {
     align-items: center;
   }
 }
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  padding: 1rem 0.5rem 2rem 0.5rem;
+  background-color: #4e4e4e;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.copy {
+  margin-top: 0.75rem;
+}
+
+.social {
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer svg {
+  width: 2rem;
+  margin-left: 2rem;
+}
+
+#facebook {
+  fill: #3b5998;
+}
+
+#twitter {
+  fill: #1da1f2;
+}
+
+#linkedin {
+  fill: #0a66c2;
+}
+
+#github {
+  fill: #211f1f;
+}
+
+@media screen and (min-width: 46.875rem) {
+  footer .container {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
