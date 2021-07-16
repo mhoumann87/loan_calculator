@@ -1,0 +1,104 @@
+/* Get fonts from google */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;900&display=swap');
+
+:root {
+  /* Color variables */
+  --background: #184059;
+  --bg-cards: #2b709b;
+  --border: #5d8aa6;
+  --text: #d7d7d9;
+  --link: #bf7b3f;
+  --hover: #8c2f1b;
+
+  /* Font variables */
+  --base-font: 'Lato', sans-serif;
+
+  --thin: 100;
+  --normal: 400;
+  --bold: 900;
+}
+
+/* Reset default browser styles */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--base-font);
+  font-weight: var(--normal);
+}
+
+body {
+  margin: 0;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.3rem;
+}
+h4 {
+  font-size: 1rem;
+}
+h5 {
+  font-size: 0.83rem;
+}
+h6 {
+  font-size: 0.667rem;
+}
+
+/* Base setup */
+body {
+  background-color: var(--background);
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas: 'top-bar' 'header' 'main' 'footer';
+}
+
+p {
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: var(--normal);
+}
+
+h1,
+h2,
+h3 {
+  font-weight: var(--thin);
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: all 0.3s ease-in;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--hover);
+}
+
+/* container for setting max width for content 
+for x-large screens*/
+.container {
+  width: 100%;
+  max-width: 112.5rem;
+}
