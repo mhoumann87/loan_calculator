@@ -3,8 +3,8 @@
 
 :root {
   /* Color variables */
-  --background: #184059;
-  --bg-cards: #2b709b;
+  --background: #2b709b;
+  --bg-cards: #184059;
   --border: #5d8aa6;
   --text: #d7d7d9;
   --link: #bf7b3f;
@@ -153,6 +153,62 @@ nav {
 
 header {
   grid-area: header;
+  background-color: var(--bg-cards);
+}
+
+header .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: var(--text);
+  margin: 0;
+}
+
+@media screen and (min-width: 46.875rem) {
+  header {
+    background-image: url('./header-img.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 60vh;
+
+    isolation: isolate;
+  }
+
+  header h1 {
+    font-size: 8em;
+  }
+
+  header .container {
+    height: 100%;
+    justify-content: end;
+    align-items: center;
+    padding: 0;
+  }
+
+  header .content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    text-align: right;
+    padding: 0 1rem;
+    position: relative;
+  }
+
+  header .content::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-color: var(--bg-cards);
+    mix-blend-mode: multiply;
+  }
 }
 
 main {
