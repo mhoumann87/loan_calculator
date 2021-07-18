@@ -44,37 +44,60 @@
     </header>
 
     <main>
-      <section class="center--card">
-        <h3>Loan Info</h3>
-        <form>
-          <div class="form--control">
-            <label for="amount">Loan Amount</label>
-            <input type="number" name="amount" id="amount" />
+      <div class="container">
+        <section class="center--card">
+          <div class="card--box card--box-form">
+            <h2>Loan Info</h2>
+            <form>
+              <div class="form-control">
+                <label for="amount">Loan Amount</label>
+                <input type="text" name="amount" id="amount" />
+              </div>
+
+              <div class="form-control">
+                <label for="startup">Start Up Fee</label>
+                <input type="text" name="startup" id="startup" />
+              </div>
+
+              <div class="form-control">
+                <label for="years">Years to Pay Back</label>
+                <input type="text" name="years" id="years" />
+              </div>
+
+              <div class="form-control">
+                <label for="months">OR Months to Pay Back</label>
+                <input type="text" name="months" id="months" />
+              </div>
+
+              <div class="form-control">
+                <label for="interest">Interest Rate</label>
+                <input type="text" name="interest" id="interest" />
+              </div>
+
+              <div class="form-control select">
+                <label for="feq">Interest Frequency</label>
+                <select name="feq" id="feq">
+                  <option value="week">Weekly</option>
+                  <option value="mth">Monthly</option>
+                  <option value="qurt">Quarterly</option>
+                  <option value="year" selected>Yearly</option>
+                </select>
+                <span class="custom-arrow"></span>
+              </div>
+
+              <button disabled type="submit">Calculate Loan</button>
+            </form>
           </div>
 
-          <div class="form-control">
-            <label for="startup">Start Up Fee</label>
-            <input type="number" name="startup" id="startup" />
+          <div class="card--box card--box-result">
+            <h2>Result:</h2>
+            <p>Monthly Payment: <span id="mpb"></span></p>
+            <p>Payment Total: <span class="total"></span></p>
+            <p>Total Interest: <span class="totInt"></span></p>
+            <p>Yearly Total Interest <span class="apo"></span></p>
           </div>
-
-          <div class="form-control">
-            <label for="years">Years to Pay Back</label>
-            <input type="number" name="years" id="years" />
-          </div>
-
-          <div class="form-control">
-            <label for="months">OR Months to Pay Back</label>
-            <input type="number" name="months" id="months" />
-          </div>
-
-          <div class="form-control">
-            <label for="interest">Interest Rate p.a</label>
-            <input type="number" name="interest" id="interest" />
-          </div>
-
-          <button type="submit">Calculate Loan</button>
-        </form>
-      </section>
+        </section>
+      </div>
     </main>
 
     <footer>
