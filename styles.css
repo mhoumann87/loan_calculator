@@ -130,6 +130,7 @@ select {
   background: #4d5061;
   color: var(--text);
   border: none;
+  cursor: pointer;
 }
 
 .select {
@@ -322,6 +323,11 @@ header h1 {
 main {
   grid-area: main;
   width: 100%;
+}
+
+noscript :where(h2, p) {
+  text-align: center;
+  color: var(--text);
 }
 
 main .container {
