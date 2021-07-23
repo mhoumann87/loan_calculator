@@ -190,8 +190,7 @@ button {
 }
 
 button:hover,
-button:active,
-button:focus {
+button:active {
   border-color: #426275;
   background-color: #426275;
   box-shadow: 0 2px 4px rgba(3, 3, 3, 0.39);
