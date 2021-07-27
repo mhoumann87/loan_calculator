@@ -29,6 +29,15 @@ running.value = 0;
  */
 const validateInput = input => input.length > 0 && !isNaN(parseInt(input));
 
+/* Function to calculate monthly payments */
+const monthlyPayment = () => {};
+
+/* Function to calculate total payback */
+const totalPayback = () => {};
+
+/* Calculate Annual Percentage Rate */
+const apr = () => {};
+
 /*
  * Function to check all inputs are valid, and enable the button
  */
