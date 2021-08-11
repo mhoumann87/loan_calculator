@@ -18,6 +18,17 @@ const allValid = {
   interest: false,
 };
 
+const values = {
+  amount: 0,
+  startup: 0,
+  running: 0,
+  runningFeq: 0,
+  years: 0,
+  months: 0,
+  interest: 0,
+  interestFeq: 0,
+};
+
 /*
  * Because running fee isn't always on loans, we set a zero from the beginning
  */
@@ -84,14 +95,14 @@ const formSubmit = e => {
     months.value = 0;
   }
   const values = {
-    amount: amount.value,
-    startup: startup.value,
-    running: running.value,
-    runningFeq: runningFeq.value,
-    years: years.value,
-    months: months.value,
-    interest: interest.value,
-    interestFeq: interestFeq.value,
+    amount: parseInt(amount.value),
+    startup: parseInt(startup.value),
+    running: parseInt(running.value),
+    runningFeq: parseInt(runningFeq.value),
+    years: parseInt(years.value),
+    months: parseInt(months.value),
+    interest: parseInt(interest.value),
+    interestFeq: parseInt(interestFeq.value),
   };
 
   console.log(values);

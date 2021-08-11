@@ -419,6 +419,15 @@ footer svg {
   margin-left: 2rem;
 }
 
+footer svg:hover,
+footer svg:focus {
+  transform: scale(1.2);
+}
+
+footer svg:active {
+  transform: scale(0.95);
+}
+
 #facebook {
   fill: #3b5998;
 }
