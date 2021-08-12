@@ -11,6 +11,9 @@ const interestFeq = document.querySelector('#interestFeq');
 // Set a variable for checking if all data is valid
 let buttonDisabled = true;
 
+// Get the output fields for the result
+const totalWithFee = document.querySelector('#total-with-fees');
+
 const allValid = {
   amount: false,
   startup: false,
