@@ -108,6 +108,11 @@ const formSubmit = e => {
     interestFeq: parseInt(interestFeq.value),
   };
 
+  const totFee =
+    values.amount + values.startup + values.running * values.running;
+
+  totalWithFee.innerText = totFee;
+
   console.log(values);
 };
 
